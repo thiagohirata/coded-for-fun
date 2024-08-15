@@ -11,7 +11,7 @@ const Section: React.FC = () => {
         <p className="mt-2">A logic puzzle game.</p>
 
         <img
-          className="w-full h-[250px] object-contain bg-gray-700 rounded mt-auto"
+          className="w-full h-[250px] object-contain bg-gray-700 rounded-xl mt-auto"
           src={require("./cover-image.png")}
           alt="Cover for Tile Tide"
         />

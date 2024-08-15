@@ -15,7 +15,7 @@ const Page: React.FC = () => {
         <Bobabibu />
       </div>
 
-      <section className="mt-10 w-full p-4">
+      <section className="mt-20 w-full p-4">
         <div className="mt-auto flex gap-2 justify-center">
           <a href="https://github.com/thiagohirata/coded-for-fun">
             <button className="btn-icon" type="button">
@@ -24,6 +24,7 @@ const Page: React.FC = () => {
             </button>
           </a>
         </div>
+        
       </section>
     </main>
   );

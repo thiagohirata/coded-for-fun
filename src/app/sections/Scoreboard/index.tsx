@@ -11,7 +11,7 @@ const Section: React.FC = () => {
         <p className="mt-2">A simple scoreboard for playing board games.</p>
 
         <img
-          className="w-full h-[250px] object-contain bg-gray-700 rounded mt-auto"
+          className="w-full h-[250px] object-contain bg-gray-700 rounded-xl mt-auto"
           src={require("./screenshot-01.jpg")}
           alt="screenshot of scoreboard"
         />
