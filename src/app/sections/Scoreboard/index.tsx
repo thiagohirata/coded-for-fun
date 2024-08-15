@@ -4,7 +4,10 @@ const Section: React.FC = () => {
   return (
     <a href="https://scoreboard.hirata.dev.br">
       <section className="h-[340px] flex flex-col ">
-        <h2 className="font-semibold text-slate-200">Scoreboard</h2>
+        <h2 className="font-semibold text-slate-200">
+          Scoreboard <small className="ml-2 text-gray-500">2024</small>
+        </h2>
+
         <p className="mt-2">A simple scoreboard for playing board games.</p>
 
         <img
