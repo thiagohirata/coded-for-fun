@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+@layer components {
+  .page {
+    @apply mx-auto px-4 flex flex-col min-h-svh gap-5;
+    @media (display-mode: fullscreen) {
+      & {
+        @apply min-h-screen;
+      }
+    }
+  }
+}

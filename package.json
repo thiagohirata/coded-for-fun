@@ -1,0 +1,38 @@
+{
+  "name": "coded-for-fun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "serve": "node ./esbuild.mjs serve",
+    "build": "node ./esbuild.mjs build",
+    "firebase": "firebase"
+  },
+  "dependencies": {
+    "@tabler/icons": "^3.12.0",
+    "core-js": "^3.38.0",
+    "lodash": "^4.17.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "nanoid": "^5.0.7",
+    "esbuild": "^0.23.0",
+    "firebase-tools": "^13.15.2",
+    "@chialab/esbuild-plugin-html": "^0.18.2",
+    "@headlessui/react": "^2.1.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.2.0",
+    "@types/react": "^18.3.3",
+    "autoprefixer": "^10.4.20",
+    "esbuild-plugin-svgr": "^2.1.0",
+    "esbuild-style-plugin": "^1.6.3",
+    "htmlnano": "^2.1.1",
+    "postcss": "^8.4.41",
+    "svgo": "^3.3.2",
+    "tailwindcss": "^3.4.10",
+    "yargs": "^17.7.2"
+  }
+}
