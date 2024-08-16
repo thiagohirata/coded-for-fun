@@ -7,5 +7,6 @@ const section: Section = {
   imgSrc: require("./cover-image.png"),
   imgAlt: "Tile Tide",
   href: "https://tile-puzzle.hirata.dev.br",
+  sourceUrl: "https://github.com/thiagohirata/tile-puzzle",
 };
 export default section;

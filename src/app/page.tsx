@@ -13,6 +13,7 @@ export type Section = {
   imgAlt: string;
   href: string;
   badge: string;
+  sourceUrl?: string;
 };
 
 const CONTENT: Section[] = [
@@ -32,10 +33,20 @@ const Page: React.FC = () => {
         {CONTENT?.map((section, idx) => (
           <a href={section?.href} key={idx}>
             <section className="h-[340px] flex flex-col ">
-              <h2 className="font-semibold text-slate-200">
-                {section?.title}{" "}
-                <small className="ml-2 text-gray-500">{section?.badge}</small>
-              </h2>
+              <div className="flex">
+                <h2 className="font-semibold text-slate-200 mr-auto">
+                  {section?.title}{" "}
+                  <small className="ml-2 text-gray-500">{section?.badge}</small>
+                </h2>
+                {section.sourceUrl && (
+                  <a href={section.sourceUrl}>
+                    <button className="btn-icon text-gray-400" type="button">
+                      <span className="sr-only">Github</span>
+                      <IconGitHub height={20} width={20} />
+                    </button>
+                  </a>
+                )}
+              </div>
 
               <p className="mt-2">{section?.subtitle}</p>
 

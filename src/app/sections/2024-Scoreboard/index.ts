@@ -7,5 +7,6 @@ const section: Section = {
   imgSrc: require("./screenshot-01.png"),
   imgAlt: "Scoreboard",
   href: "https://scoreboard.hirata.dev.br",
+  sourceUrl: "https://github.com/thiagohirata/scoreboard",
 };
 export default section;

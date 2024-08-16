@@ -7,5 +7,6 @@ const section: Section = {
   imgSrc: require("./bobabibu.gif"),
   imgAlt: "Bobabibu",
   href: "https://bobabibu.hirata.dev.br",
+  sourceUrl: "https://github.com/thiagohirata/bobabibu",
 };
 export default section;
