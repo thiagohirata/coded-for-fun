@@ -29,6 +29,7 @@ const buildContext = async ({ production, editor }) =>
     loader: {
       ".png": "file",
       ".jpg": "file",
+      ".gif": "file",
     },
     minify: production ?? false,
     plugins: [
