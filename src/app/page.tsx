@@ -32,10 +32,15 @@ const Page: React.FC = () => {
       <div className="px-1 lg:px-0 gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-10">
         {CONTENT?.map((section, idx) => (
           <a href={section?.href} key={idx}>
-            <section className="h-[340px] flex flex-col ">
-              <div className="flex">
-                <h2 className="font-semibold text-slate-200 mr-auto">
-                  {section?.title}{" "}
+            <section className="flex flex-col">
+              <img
+                className="w-full h-[250px] object-cover bg-gray-700 rounded-xl hover:scale-105 transition"
+                src={section?.imgSrc}
+                alt={section?.imgAlt}
+              />
+              <div className="flex mt-3">
+                <h2 className="font-semibold text-white mr-auto">
+                  {section?.title}
                   <small className="ml-2 text-gray-500">{section?.badge}</small>
                 </h2>
                 {section.sourceUrl && (
@@ -48,13 +53,7 @@ const Page: React.FC = () => {
                 )}
               </div>
 
-              <p className="mt-2">{section?.subtitle}</p>
-
-              <img
-                className="w-full h-[250px] object-cover bg-gray-700 rounded-xl mt-auto hover:scale-105 transition"
-                src={section?.imgSrc}
-                alt={section?.imgAlt}
-              />
+              <p className="mt-2 text-gray-400">{section?.subtitle}</p>
             </section>
           </a>
         ))}
